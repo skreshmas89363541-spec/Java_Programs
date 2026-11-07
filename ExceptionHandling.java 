@@ -1,0 +1,16 @@
+class ExceptionHandling {
+	public static void main(String[] args) {
+		try {
+			String value = "Twenty" ;
+			int number = Integer.parseInt(value) ;
+			System.out.println("Number :" +number);
+		}
+		catch(Exception e) {
+			System.out.println("Exception caught : Invalid Number Format" +e);
+	}
+	finally {
+		System.out.println("Finally block executed ");
+	}
+	System.out.println("Program continuous normally ");
+		}
+}
